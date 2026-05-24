@@ -1,7 +1,7 @@
 import pandas as pd
 
 def calculate_demographic_data(print_data=True):
-    df = pd.read_csv('adult.data.csv', skipinitialspace=True)  
+    df = pd.read_csv('adult_data.csv', skipinitialspace=True)  
     df.columns = df.columns.str.strip()
     df = df.apply(lambda x: x.str.strip() if x.dtype == "object" else x)
 
